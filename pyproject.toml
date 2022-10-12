@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "jinja2pptx"
 version = "0.1.0"
-description = "cookiecutter support for pptx presentations"
+description = "jinja2 support for pptx presentations"
 authors = ["nickolasrm <nickolasrochamachado@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "cookiecutter_pptx"}]
+packages = [{include = "jinja2_pptx"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"

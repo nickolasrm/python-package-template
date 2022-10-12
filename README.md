@@ -1,2 +1,2 @@
 # jinja2pptx
-Enables templating .pptx presentations using cookiecutter
+Enables templating .pptx presentations using jinja2
