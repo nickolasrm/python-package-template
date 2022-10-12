@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "cookiecutter-pptx"
+project = "jinja2pptx"
 copyright = "2022, Nickolas da Rocha Machado"
 author = "nickolasrm <nickolasrochamachado@gmail.com>"
 release = "0.1.0"

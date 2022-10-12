@@ -1,7 +1,7 @@
 """Tests if duplicated metadata matches across multiple parts of the code."""
 import tomli
 import pytest
-import cookiecutter_pptx
+import jinja2pptx
 import docs.source.conf as docs
 
 
@@ -15,7 +15,7 @@ def fixture_metadata() -> dict:
 
 def test_version(metadata: dict):
     """Checks if version matches."""
-    assert cookiecutter_pptx.__version__ == metadata["version"]
+    assert jinja2pptx.__version__ == metadata["version"]
     assert docs.release == metadata["version"]
 
 
