@@ -1,6 +1,8 @@
 install:
 	pip install poetry
 	poetry install
+	git init
+	poetry run pre-commit install
 
 test:
 	poetry run pytest

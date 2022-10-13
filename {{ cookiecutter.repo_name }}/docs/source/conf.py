@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "jinja2pptx"
-copyright = "2022, Nickolas da Rocha Machado"
-author = "nickolasrm <nickolasrochamachado@gmail.com>"
-release = "0.1.0"
+project = "{{ cookiecutter.repo_name }}"
+copyright = "{{ cookiecutter.__year }}, {{ cookiecutter.author }}"
+author = "{{ cookiecutter.author }}"
+release = "{{ cookiecutter.version }}"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
