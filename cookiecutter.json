@@ -1,0 +1,10 @@
+{
+    "repo_name": "Name of the project in the repository",
+    "python_package": "{{ cookiecutter.repo_name.lower().replace('-', '_') }}",
+    "author": "Author names separated by commas",
+    "email": "Author email addresses separated by commas",
+    "description": "Short description of the project",
+    "version": "0.1.0",
+    "__year": "{% now 'utc', '%Y' %}",
+    "__date": "{% now 'utc', '%Y-%m-%d' %}"
+}
