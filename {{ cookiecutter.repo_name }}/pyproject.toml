@@ -29,3 +29,20 @@ tomli = "^2.0.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = """
+-x tests {{ cookiecutter.python_package }} \
+--disable-warnings \
+--capture=tee-sys \
+--doctest-modules \
+--cov-report term-missing \
+--cov-report xml \
+--cov-report html \
+--junitxml=junit/test-results.xml \
+--cov {{ cookiecutter.python_package }} -ra"""
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "raise NotImplementedError", "pass"]
+fail_under = 0
+show_missing = true
