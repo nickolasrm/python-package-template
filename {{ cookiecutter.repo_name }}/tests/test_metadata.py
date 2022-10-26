@@ -1,9 +1,11 @@
 """Tests if duplicated metadata matches across multiple parts of the code."""
-import tomli
-import pytest
-import {{ cookiecutter.python_package }}
-import docs.source.conf as docs
 import re
+import {{ cookiecutter.python_package }}
+
+import pytest
+import tomli
+
+import docs.source.conf as docs
 
 
 @pytest.fixture(name="metadata")

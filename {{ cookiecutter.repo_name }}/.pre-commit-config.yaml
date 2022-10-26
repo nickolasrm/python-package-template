@@ -2,24 +2,29 @@ exclude: docs/
 repos:
   - repo: local
     hooks:
+      - id: black
+        name: Formatting code (black)
+        entry: black
+        language: system
+        types: [python]
+      - id: isort
+        name: Sorting imports (isort)
+        entry: isort
+        language: system
+        types: [python]
       - id: flake8
-        name: Flake8
+        name: Enforcing pep8 (flake8)
         entry: flake8
         language: system
         types: [python]
       - id: mypy
-        name: Mypy
+        name: Checking type matching (mypy)
         entry: mypy
         language: system
         types: [python]
         exclude: tests
       - id: pylint
-        name: Pylint
+        name: Preventing technical debt (pylint)
         entry: pylint
-        language: system
-        types: [python]
-      - id: black
-        name: Black
-        entry: black
         language: system
         types: [python]
